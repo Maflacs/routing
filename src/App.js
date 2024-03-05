@@ -4,6 +4,7 @@ import Personnel from "./pages/Personnel";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer";
+import PersonnelDetail from "./pages/PersonnelDetail";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/personnel" element={<Personnel />} />
+        <Route path="/personnel/:id" element={<PersonnelDetail />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
