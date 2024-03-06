@@ -71,7 +71,11 @@
 }
 
 .errorWrapper {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   font-size: xx-large;
 }
 
@@ -119,4 +123,47 @@
 .personnelCard {
   width: 30%;
   text-align: center;
+}
+
+.personWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.btnWrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.pathWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnGroup {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btnGroup a {
+  border: none;
+  padding: 5px;
+  background-color: black;
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pathDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
